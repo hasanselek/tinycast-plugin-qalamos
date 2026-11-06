@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "qalamos-ara",
+  "title": "Yazma Eser Arama (Qalamos)",
+  "description": "Qalamos'ta aramayı tarayıcıda açar; Yazma Eser Arama Yardımcısı eklentisi varyantlı aramayı orada başlatır.",
+  "icon": "icon.png",
+  "author": "fikhiefendi",
+  "license": "MIT",
+  "platforms": ["macOS"],
+  "categories": ["Productivity", "Documentation"],
+  "commands": [
+    {
+      "name": "search",
+      "title": "Qalamos'ta Ara",
+      "subtitle": "Yazma Eser Arama",
+      "description": "Qalamos aramasını tarayıcıda açar.",
+      "keywords": ["qalamos", "yazma", "eser", "nüsha", "manuscript", "handschrift"],
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "browser",
+      "type": "dropdown",
+      "title": "Tarayıcı",
+      "description": "Yazma Eser Arama Yardımcısı eklentisinin kurulu olduğu tarayıcı.",
+      "required": false,
+      "default": "Google Chrome",
+      "data": [
+        { "title": "Varsayılan tarayıcı", "value": "" },
+        { "title": "Google Chrome", "value": "Google Chrome" },
+        { "title": "Arc", "value": "Arc" },
+        { "title": "Brave Browser", "value": "Brave Browser" }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.80.0"
+  }
+}
